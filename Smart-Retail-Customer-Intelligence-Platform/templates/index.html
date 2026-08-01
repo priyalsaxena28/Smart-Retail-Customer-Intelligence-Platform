@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Retail Customer Intelligence Platform</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        <i class="fa-solid fa-store"></i>
+        Smart Retail Customer Intelligence Platform
+    </h1>
+
+    <p>AI Powered Retail Analytics Dashboard</p>
+
+</header>
+
+<div class="dashboard">
+
+    <div class="card">
+
+        <i class="fa-solid fa-shirt icon"></i>
+
+        <h2>Product Classification</h2>
+
+        <input type="file" id="productImage">
+
+        <button onclick="predictProduct()">Predict Product</button>
+
+        <p id="productResult"></p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-face-smile icon"></i>
+
+        <h2>Sentiment Analysis</h2>
+
+        <textarea id="review" placeholder="Enter customer review..."></textarea>
+
+        <button onclick="predictSentiment()">Analyze</button>
+
+        <p id="sentimentResult"></p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-user-check icon"></i>
+
+        <h2>Face Recognition</h2>
+
+        <input type="file" id="faceImage">
+
+        <button onclick="recognizeFace()">Recognize</button>
+
+        <p id="faceResult"></p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-robot icon"></i>
+
+        <h2>AI Retail Chatbot</h2>
+
+        <input
+            type="text"
+            id="question"
+            placeholder="Ask your retail question">
+
+        <button onclick="chat()">Ask AI</button>
+
+        <p id="chatResult"></p>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
